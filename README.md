@@ -562,17 +562,16 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    Task 1, part 3:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz
-   INFO:root:rank=0 pagerank=8.4165e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-   INFO:root:rank=1 pagerank=8.4165e+00 url=www.lawfareblog.com/lawfare-job-board
-   INFO:root:rank=2 pagerank=8.4165e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
-   INFO:root:rank=3 pagerank=8.4165e+00 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
-   INFO:root:rank=4 pagerank=8.4165e+00 url=www.lawfareblog.com/subscribe-lawfare
-   INFO:root:rank=5 pagerank=8.4165e+00 url=www.lawfareblog.com/masthead
-   INFO:root:rank=6 pagerank=8.4165e+00 url=www.lawfareblog.com/topics
-   INFO:root:rank=7 pagerank=8.4165e+00 url=www.lawfareblog.com/our-comments-policy
-   INFO:root:rank=8 pagerank=8.4165e+00 url=www.lawfareblog.com/upcoming-events
-   INFO:root:rank=9 pagerank=8.4165e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
-
+   INFO:root:rank=0 pagerank=2.8741e-01 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+   INFO:root:rank=1 pagerank=2.8741e-01 url=www.lawfareblog.com/lawfare-job-board
+   INFO:root:rank=2 pagerank=2.8741e-01 url=www.lawfareblog.com/masthead
+   INFO:root:rank=3 pagerank=2.8741e-01 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+   INFO:root:rank=4 pagerank=2.8741e-01 url=www.lawfareblog.com/subscribe-lawfare
+   INFO:root:rank=5 pagerank=2.8741e-01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+   INFO:root:rank=6 pagerank=2.8741e-01 url=www.lawfareblog.com/documents-related-mueller-investigation
+   INFO:root:rank=7 pagerank=2.8741e-01 url=www.lawfareblog.com/our-comments-policy
+   INFO:root:rank=8 pagerank=2.8741e-01 url=www.lawfareblog.com/upcoming-events
+   INFO:root:rank=9 pagerank=2.8741e-01 url=www.lawfareblog.com/topics
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2
    INFO:root:rank=0 pagerank=3.4697e-01 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
