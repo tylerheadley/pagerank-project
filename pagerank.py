@@ -145,6 +145,9 @@ class WebGraph():
             # Create the dangling vector 'a': 1 if row sum is 0 (dangling), otherwise 0
             a = (row_sums == 0).float()
 
+            # P_bar = (a/n).repeat(n, 1).t() + self.P
+            # P_bar_bar = 
+
             # main loop
             xprev = x0
             x = xprev.detach().clone()
@@ -185,6 +188,9 @@ class WebGraph():
                 
                 # Finally, compute x^k.T by adding both terms
                 x = xP + second_term_v
+
+                # Normalize x to help with numerical issues
+                x = x / torch.norm(x)
 
                 # output debug information
                 residual = torch.norm(x-xprev)
